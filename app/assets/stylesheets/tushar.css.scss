@@ -1,3 +1,15 @@
 // Place all the styles related to the tushar controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.round {
+	height:100px;
+	width:100px;
+	-webkit-border-radius:500px;
+	-moz-border-radius:500px;
+	border-radius:500px;
+}
+
+.centered {
+	text-align:center;
+	background-image: url("watch_minimised.png");
+}

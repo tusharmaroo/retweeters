@@ -11,14 +11,15 @@ class TusharController < ApplicationController
   	@array = Array.new
 	ary = Array.new
   	for temp1 in temp do
-  		url = 'https://api.twitter.com/1.1/statuses/retweets/'+temp1+'.json?trim_user=false'
+  		url = 'https://api.twitter.com/1.1/statuses/retweets/'+temp1+'.json?trim_user=false&&size=original'
 		#url = 'https://api.twitter.com/1.1/statuses/'+temp+'/retweeted_by.json'
 		@responses = client.get(url).body	
 		@responses.each do |response|
 			name = response[:user][:name]
 			count = response[:user][:followers_count]
 			image = response[:user][:profile_image_url]
-			ary = [name, count, image]
+			image1 = image.gsub("_normal", "")
+			ary = [name, count, image1]
 			@array << ary
 		end
   	end
