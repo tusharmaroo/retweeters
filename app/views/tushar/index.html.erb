@@ -1,10 +1,12 @@
-<div class="centered">
-	<h1>Yet Another Twitter Puzzle</h1><br />
-	<p>
+<h1 class="center-text">Twitter API Demo</h1><br>
+<img class="site-background-image" src="http://puzzle.multunus.com/img/watch_minimized.png" alt="" />
+<div class="circle-container">
+<a href='#' class='center'><img src='http://pbs.twimg.com/profile_images/651575553/twittergithub2.png'></a>
+	<% angle = 18 %>
 	<% @sorted1.each do |tushar| %>
-		<%= tushar[0] %><br>
-		<%= tushar[1] %><br>
-		<img src="<%= tushar[2] %>" class="round" /><br>
+		<%#= tushar[0] %>
+		
+		<a href="#" class="deg<%=angle%>"> <%= tushar[1] %> <img src="<%= tushar[2] %>" class="round" /></a>
+		<% angle = angle+36 %>
 	<% end %>
-	</p>
 </div>
