@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+.round {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px; }
+
+.circle-container {
+  position: relative;
+  width: 24em;
+  height: 24em;
+  padding: 2.8em;
+  /*= 2em * 1.4 (2em = half the width of an img, 1.4 = sqrt(2))*/
+  border: dashed 1px;
+  border-radius: 50%;
+  margin: 1.75em auto 0; }
+
+.circle-container img {
+  display: block;
+  width: 100%; }
+
+.deg18 {
+  -webkit-transform: rotate(18deg) translate(12em) rotate(-20deg); }
+
+/* 12em = half the width of the wrapper */
+.deg54 {
+  -webkit-transform: rotate(54deg) translate(12em) rotate(304deg); }
+
+.deg90 {
+  -webkit-transform: rotate(90deg) translate(12em) rotate(-90deg); }
+
+.deg126 {
+  -webkit-transform: rotate(126deg) translate(12em) rotate(-126deg); }
+
+.deg162 {
+  -webkit-transform: rotate(162deg) translate(12em) rotate(-162deg); }
+
+.deg198 {
+  -webkit-transform: rotate(198deg) translate(12em) rotate(-198deg); }
+
+.deg234 {
+  -webkit-transform: rotate(234deg) translate(12em) rotate(-234deg); }
+
+.deg270 {
+  -webkit-transform: rotate(270deg) translate(12em) rotate(-270deg); }
+
+.deg306 {
+  -webkit-transform: rotate(306deg) translate(12em) rotate(-306deg); }
+
+.deg342 {
+  -webkit-transform: rotate(342deg) translate(12em) rotate(-342deg); }
+
+.circle-container a {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6em;
+  height: 8em;
+  margin: -2em;
+  /* 2em = 4em/2 */
+  /* half the width  */ }
+
+.circle-container a:not(.center):before {
+  position: absolute;
+  width: 4em;
+  color: white;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  font: 1.25em/3.45 Courier, monospace;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-indent: -2em;
+  text-shadow: 0 0 .1em deeppink;
+  transition: .7s;
+  /* only works in Firefox */ }
+
+.circle-container a:hover:before {
+  opacity: 1; }
+
+img.site-background-image {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -9;
+  opacity: .6; }
+
+h1.center-text {
+  text-align: center;
+  color: white; }
