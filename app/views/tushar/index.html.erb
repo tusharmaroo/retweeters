@@ -1,12 +1,20 @@
-<h1 class="center-text">Twitter API Demo</h1><br>
-<img class="site-background-image" src="http://puzzle.multunus.com/img/watch_minimized.png" alt="" />
-<div class="circle-container">
-<a href='#' class='center'><img src='http://pbs.twimg.com/profile_images/651575553/twittergithub2.png'></a>
-	<% angle = 18 %>
-	<% @sorted1.each do |tushar| %>
-		<%#= tushar[0] %>
-		
-		<a href="#" class="deg<%=angle%>"> <%= tushar[1] %> <img src="<%= tushar[2] %>" class="round" /></a>
-		<% angle = angle+36 %>
-	<% end %>
+<div class='influences-wrapper ui-radmenu-parent' id='influences-wrapper'>
+	<h1 class="center-text">Yet Another Solution</h1><br>
+	<div class='influence-collection'></div>
+	<div class='main-profile-image'>
+		<img class='img-circle main-image' src='http://pbs.twimg.com/profile_images/426158315781881856/sBsvBbjY.png'>
+	</div>
+	<div class='radial-list'>
+	<% count = 1 %>
+		<ul class='list'>
+		<% @sorted1.each do |tushar| %>
+			<li class='item'>
+				<a data-original-title='<%= count %>' data-placement='top' data-toggle='tooltip' href='#' title='' class="tusharmaroo">
+					<img class='infulence-image img-circle' src='<%= tushar[2] %>'>
+				</a>
+				<% count = count+1 %>
+			</li>
+		<% end %>
+		</ul>
+	</div>
 </div>

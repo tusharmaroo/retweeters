@@ -10,6 +10,7 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
+  gem 'rails_layout'
 end
 
 group :production do
@@ -17,7 +18,7 @@ group :production do
 	gem 'rails_12factor'
 end
 
-
+gem 'bootstrap-sass'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
